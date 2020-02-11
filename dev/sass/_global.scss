@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0; 
     font-family: $font-header;
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.25;
 }
 
 /*
@@ -57,6 +57,7 @@ h4 {
 
 p, a {
   font-size: 1.8rem;
+  margin: 0;
 }
 
 nav {
@@ -73,24 +74,50 @@ nav {
 .subheading {
   font-weight: 400;
   font-size: 3.198rem;
+  padding: 1.3rem 0rem;
 }
 
-.btn-primary {
-  border: none;
-  background-color: $primary-black;
-  color: $secondary-white;
+.project-tag {
+  font-size: 1.35rem;
+}
+
+.btn {
+  font-family: $font-header;
+  font-size: 2.39rem;;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding: .5rem 2rem;
+  border: .15rem solid $primary-black;
+  border-top-left-radius: 25.5rem 1.5rem;
+  border-top-right-radius: 1.5rem 22.5rem;
+  border-bottom-right-radius: 22.5rem 1.5rem;
+  border-bottom-left-radius:1.5rem 25.5rem;
+  transition-duration: 0.3s;
+  transition-property: transform, box-shadow;
   &:hover {
-    color: $secondary-white;
     text-decoration: none;
   }
 }
 
+.btn-primary {
+  background-color: $primary-black;
+  color: $secondary-white;
+  &:hover {
+    color: $secondary-white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .btn-secondary {
-  border: 2px solid $primary-black;
   background-color: transparent;
   color: $primary-black;
   &:hover {
     color: $primary-black;
-    text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   }
 }
