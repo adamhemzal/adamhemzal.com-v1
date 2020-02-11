@@ -6,7 +6,8 @@ html, body {
     height: 100%;
     width: 100%;
     line-height: 1.6;
-    font-family: $font-text;
+    font-weight: 400;
+    font-family: $font-body-text;
     font-size: 62.5%; //10px
     @include for-tablet-landscape {
         font-size: 73.5%;
@@ -21,12 +22,13 @@ html, body {
 
 img {
     max-width: 100%;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 { 
     margin: 0; 
     font-family: $font-header;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 1.15;
 }
 
@@ -55,4 +57,40 @@ h4 {
 
 p, a {
   font-size: 1.8rem;
+}
+
+nav {
+  ul {
+    margin: 0;
+    li {
+      margin: 0;
+      display: inline;
+      list-style-type: none;
+    }
+  }
+}
+
+.subheading {
+  font-weight: 400;
+  font-size: 3.198rem;
+}
+
+.btn-primary {
+  border: none;
+  background-color: $primary-black;
+  color: $secondary-white;
+  &:hover {
+    color: $secondary-white;
+    text-decoration: none;
+  }
+}
+
+.btn-secondary {
+  border: 2px solid $primary-black;
+  background-color: transparent;
+  color: $primary-black;
+  &:hover {
+    color: $primary-black;
+    text-decoration: none;
+  }
 }

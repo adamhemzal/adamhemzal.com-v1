@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Adam Hemzal - SW & technology enthusiast who builds for the web</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="keywords" content="{{site-keywords}}">
-    <meta name="description" content="{{site-decription}}" >
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="software, technology, enthusiast, web developer, developer, javascript, analysis, analyst,">
+    <meta name="description" content="Adam Hemzal is a software & technology enthusiast who loves build for the web." >
     <meta name="author" content="Adam Hemžal" >
     <meta name="theme-color" content="#96c21b" />
 
     <!-- preconnect fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Quicksand:400,700" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap" crossorigin>
 
     <!-- socials -->
     <meta property="og:title" content="{{site-title}}">
@@ -30,8 +31,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico" >
 
     <!-- Include fonts-->
-    <link rel='dns-prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Quicksand:400,700' />
-    <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Quicksand:400,700">
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap' />
+    <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap">
     
     <!-- Include CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -58,8 +59,73 @@
 </head> 
 <body>
 
-    <h1>Lorem ipsum...</h1>
-    <p>Hello</p>
+    <header class="container-fluid">
+        <nav role="navigation" class="row">
+            
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Adam Hemzal</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    
+    <main role="main" class="container-fluid">
+        <div class="container">
+
+            <section class="row">
+                <div class="col-md-6">
+                    <h1>Hey, I'm Adam</h1>
+                    <h2 class="subheading">Software & technology enthusiast who builds for the web</h2>
+                    <p><strong>I'm passionate</strong> about web and technology in general. In 2015 I was introduced to HTML & CSS & JavaScript and I immediately became obsessed with them.</p>
+                    <p><strong>I've been helping</strong> various clients in the online world for over 4 years. Communication, designing, building websites and small applications were parts of my routine alongside with studying at university.</p>
+                    <a href="#" class="btn-primary" role="button">Contact</a>
+                    <a href="#" class="btn-secondary" role="button">More about me</a>
+                </div>
+                <div class="col-md-6">
+                    <img
+                        alt="Adam Hemzal - 'Photo of me'"
+                        data-sizes="auto"
+                        data-srcset="https://placekitten.com/400/300 400w,
+                            https://placekitten.com/800/700 800w,
+                            https://placekitten.com/1200/1000 1200w"
+                        data-src="https://placekitten.com/800/700"
+                        class="lazyload" 
+                    />
+                </div>
+    
+                <div class="col-lg-12 text-align-center">
+                    <img src="#" alt="arrow down">
+                </div>
+            </section>
+            
+        </div>
+
+
+        <section class="row">
+            <div class="col-md-12">
+                <h2>Selected Work</h2>
+                <a href="#">All Work</a>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+
+    </footer>
+
 
     <!-- lazyloading image example: -->
     <img
@@ -73,9 +139,5 @@
     />
 
     <script src="js/app.min.js" defer></script>
-    <script>
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        console.log(w);
-    </script>
 </body>
 </html>
