@@ -1,3 +1,7 @@
+.display-none {
+    display: none;
+}
+
 .text-align-left {
     text-align: left;
 }
@@ -8,6 +12,11 @@
 
 .text-align-center {
     text-align: center;
+}
+
+.box-shadow-scroll {
+    box-shadow: 1px 2px 18px rgba(0,0,0,.1);
+    transition: 0.1s;
 }
 
 .btn-margin-left {
@@ -56,9 +65,18 @@
     padding-right: 1rem;
 }
 
-.flex-justify-between {
+.flex-align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-between, .flex-justify-brand  {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
+}
+
+.flex-justify-brand {
+    flex-wrap: wrap;
 }
