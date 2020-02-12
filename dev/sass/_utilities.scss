@@ -14,16 +14,51 @@
     margin-left: 1rem;
 }
 
+.background-white {
+    background-color: $secondary-white;
+}
+
 .margin-top-2rem {
     margin-top: 2rem;
+}
+
+.padding-top-bot-5rem {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.padding-top-bot-mobile {
+    @include for-tablet-landscape {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.padding-bot-mobile {
+    @include for-tablet-landscape {
+        padding-bottom: 5rem;
+    }
+}
+
+.margin-bot-6rem {
+    margin-bottom: 6rem;
 }
 
 .text-padding-top-bot {
     padding: 1.5rem 0rem;
 }
 
+.text-padding-left {
+    padding-left: 1rem;
+}
+
+.text-padding-right {
+    padding-right: 1rem;
+}
+
 .flex-justify-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }

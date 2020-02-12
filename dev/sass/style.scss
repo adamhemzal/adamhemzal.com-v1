@@ -13,6 +13,10 @@
 @import "bootstrap-grid/grid.scss";
 @import "_mixins.scss";
 
+//SLICk - Slider
+@import "slick/slick-theme.scss";
+@import "slick/slick.scss";
+
 //REST
 @import "_utilities.scss";
 @import "_global.scss";

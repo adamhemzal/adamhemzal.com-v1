@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -9,7 +13,7 @@ html, body {
     font-weight: 400;
     font-family: $font-body-text;
     font-size: 62.5%; //10px
-    @include for-tablet-landscape {
+/*     @include for-tablet-landscape {
         font-size: 73.5%;
     }
     @include for-tablet-portrait {
@@ -17,12 +21,27 @@ html, body {
     }
     @include for-phone  {
         font-size: 85%;
-    }
+    } */
 }
 
 img {
     max-width: 100%;
     width: 100%;
+}
+
+a:not(.brand):not(.btn):not(.icon-fontello):not(.contact-mail) {
+  color: tomato;
+  text-decoration: none;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, border-bottom, background-color;
+  border-bottom: 0.15rem solid $primary-anchor;
+  &:hover {
+    color: $secondary-anchor;
+    border-bottom: 0.15rem solid $secondary-anchor;
+    text-decoration: none;
+    background-color: tomato;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -61,14 +80,29 @@ p, a {
 }
 
 nav {
+  height: 8.5rem;
   ul {
     margin: 0;
+    padding: 0;
     li {
       margin: 0;
       display: inline;
       list-style-type: none;
     }
   }
+  ul:nth-child(2) {
+    li:not(:last-child) {
+      padding-right: 3rem;
+    }
+  }
+}
+
+.icon-down-open {
+  font-size: 2.5rem;
+}
+
+.icon-fontello {
+  font-size: 3.5rem;
 }
 
 .subheading {
@@ -77,13 +111,26 @@ nav {
   padding: 1.3rem 0rem;
 }
 
-.project-tag {
+.project-tag, .footer-description {
   font-size: 1.35rem;
+}
+
+.brand, .icon-fontello, .contact-mail {
+  color: $primary-black;
+  &:hover {
+    text-decoration: none;
+    color: $primary-black;
+  }
+}
+
+.brand-text {
+  font-weight: 700;
 }
 
 .btn {
   font-family: $font-header;
-  font-size: 2.39rem;;
+  font-size: 2.39rem;
+  font-weight: 400;
   margin-top: .25rem;
   margin-bottom: .25rem;
   text-align: center;
@@ -91,10 +138,10 @@ nav {
   display: inline-block;
   padding: .5rem 2rem;
   border: .15rem solid $primary-black;
-  border-top-left-radius: 25.5rem 1.5rem;
-  border-top-right-radius: 1.5rem 22.5rem;
-  border-bottom-right-radius: 22.5rem 1.5rem;
-  border-bottom-left-radius:1.5rem 25.5rem;
+  border-top-left-radius: $border-top-left-radius;
+  border-top-right-radius: $border-top-right-radius;
+  border-bottom-right-radius: $border-bottom-right-radius;
+  border-bottom-left-radius: $border-bottom-left-radius;
   transition-duration: 0.3s;
   transition-property: transform, box-shadow;
   &:hover {
@@ -119,5 +166,31 @@ nav {
     color: $primary-black;
     transform: scale(1.1);
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section-projects-background {
+  background-image: url("../img/background/graphy-40.png");
+}
+
+.section-contact-background {
+  background-image: url("../img/background/email-pattern-45.png");
+}
+
+.footer-background {
+  background-color: $primary-black;
+  color: $secondary-white;
+}
+
+.border-right {
+  border-right: 0.15rem solid $border-grey;
+  @include for-tablet-landscape {
+    border: none;
+  }
+}
+
+.hide-mobile {
+  @include for-tablet-portrait {
+    display: none;
   }
 }

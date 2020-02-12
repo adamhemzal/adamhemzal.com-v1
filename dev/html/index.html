@@ -60,23 +60,27 @@
 <body>
 
     <header class="container-fluid">
-        <nav role="navigation" class="row">
+        <div class="container">
+            <nav role="navigation" class="row">
             
-            <div class="col-md-6">
-                <ul>
-                    <li><a href="#">Adam Hemzal</a></li>
-                </ul>
-            </div>
+                <div class="col-md-12 flex-justify-between">
+                    <ul>
+                        <li>
+                            <a href="#" class="brand">
+                                <span class="brand-text">🧙 Adam Hemzal</span>
+                            </a>
+                        </li>
+                    </ul>
 
-            <div class="col-md-6">
-                <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-        </nav>
+                    <ul>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+            </nav>    
+        </div>
     </header>
     
     <main role="main">
@@ -84,15 +88,15 @@
         <section class="container">
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <h1 class="margin-top-2rem">Hey, I'm Adam</h1>
                     <h2 class="subheading">Software & technology enthusiast who builds for the web</h2>
                     <p class="text-padding-top-bot"><strong>I'm passionate</strong> about web and technology in general. In 2015 I was introduced to HTML & CSS & JavaScript and I immediately became obsessed with them.</p>
-                    <p class="text-padding-top-bot"><strong>I've been helping</strong> various clients in the online world for over 4 years. Communication, designing, building websites and small applications were parts of my routine alongside with studying at university.</p>
-                    <a href="#" class="btn btn-primary" role="button">Contact</a>
-                    <a href="#" class="btn btn-secondary btn-margin-left" role="button">More about me</a>
+                    <p class="text-padding-top-bot"><strong>I've been helping</strong> various clients in the online world for over 4 years. Communication, designing, building small websites and applications were parts of my routine alongside with studying at university.</p>
+                    <a href="#contact" class="btn btn-primary" role="button">Contact</a>
+                    <a href="#about" class="btn btn-secondary btn-margin-left" role="button">More about me</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <img
                         alt="Adam Hemzal - 'Photo of me'"
                         data-sizes="auto"
@@ -104,43 +108,174 @@
                     />
                 </div>
     
-                <div class="col-lg-12 text-align-center">
-                    <img src="#" alt="arrow down">
+                <div class="col-lg-12 text-align-center padding-top-bot-5rem">
+                    <a class="icon-fontello" href="#projects"><i class="icon-down-open" aria-hidden="true"></i></a>
                 </div>
             </div>
             
         </section>
 
 
+        <section id="projects" class="section-projects-background">
 
-        <div class="container-fluid" style="background-color: aqua;">
             <div class="container">
-                <div class="row align-items-center">
-                    
-                    <div class="col-md-6">
-                        <div class="flex-justify-between">
-                            <h3>Barum Czech Rally Map</h3>
-                            <p class="project-tag">🗺️ Map</p>
+                <div class="row">
+                    <div class="col-md-12 flex-justify-between padding-top-bot-5rem">
+                        <h2>Selected Work</h2>
+                        <a class="btn btn-secondary hide-mobile" href="#">All work</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid background-white margin-bot-6rem">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6 padding-top-bot-mobile">
+                            <div class="flex-justify-between">
+                                <h3>Barum Czech Rally Map</h3>
+                                <p class="project-tag">🗺️ Map</p>
+                            </div>
+
+                            <p class="text-padding-top-bot">Online web map that shows speed tests, spectator places and other points of interest. I was in a role of a software engineer who was responsible for developing final product and delivering it to the customer. The website hit over 60,000 views in the first season.</p>
+                            
+                            <a href="#" class="btn btn-primary" role="button">See more</a>
+                            <a href="https://www.czechrally.com/wcd/maps/index.html" target="_blank" class="btn btn-secondary btn-margin-left" role="button">Website</a>
                         </div>
 
-                        <p class="text-padding-top-bot">Online web map that shows speed tests, spectator places and other points of interest. I was in a role of a software engineer who was responsible for developing final product and delivering it to the customer. The website hit over 60,000 views in the first season.</p>
-                        
-                        <a href="#" class="btn btn-primary" role="button">See more</a>
-                        <a href="#" class="btn btn-secondary btn-margin-left" role="button">Website</a>
-                    </div>
+                        <div class="col-lg-6 padding-bot-mobile">
+                            <img src="https://placekitten.com/800/700" alt="" width="600" height="400">
+                        </div>
 
-                    <div class="col-md-6">
-                        <img src="https://placekitten.com/800/700" alt="" width="600" height="400">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid background-white margin-bot-6rem">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6">
+                            <div class="flex-justify-between">
+                                <h3>Salon Khaleesi</h3>
+                                <p class="project-tag">💄 Beauty Salon</p>
+                            </div>
+
+                            <p class="text-padding-top-bot">Salon Khaleesi is a cosmetic saloon providing various services like massage, manicure, pedicure, etc. I was responsible for the entire project - from communicating with client to building website. It runs on WordPress allowing client to publish news.</p>
+                            
+                            <a href="#" class="btn btn-primary" role="button">See more</a>
+                            <a href="https://www.salonkhaleesi.cz/" target="_blank" class="btn btn-secondary btn-margin-left" role="button">Website</a>
+                        </div>
+
+                        <div class="col-lg-6 padding-bot-mobile">
+                            <img src="https://placekitten.com/800/700" alt="" width="600" height="400">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid background-white margin-bot-6rem">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6">
+                            <div class="flex-justify-between">
+                                <h3>Diplomatic Academy</h3>
+                                <p class="project-tag">📖 Courses</p>
+                            </div>
+
+                            <p class="text-padding-top-bot">Diplomatic Academy is a company which provides personal courses oriented on diplomacy. Website was build by <a href="https://koala42.com/" target="_blank">KOALA42</a> company. I was in the role of WordPress developer who was responsible for creating custom theme based on design.</p>
+                            
+                            <a href="#" class="btn btn-primary" role="button">See more</a>
+                            <a href="https://diplomaticka-akademie.cz/" target="_blank" class="btn btn-secondary btn-margin-left" role="button">Website</a>
+                        </div>
+
+                        <div class="col-lg-6 padding-bot-mobile">
+                            <img src="https://placekitten.com/800/700" alt="" width="600" height="400">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-align-center margin-bot-6rem">
+                        <a href="#" class="btn btn-secondary" role="button">View all work</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 padding-top-bot-5rem">
+                    <h2>Hello,</h2>
+                    <div class="border-right">
+                        <p class="text-padding-top-bot text-padding-right">I'm Adam Hemzal, software & technology enthusiast who loves to build for the web. I'm a fresh (2020) graduate with master's degree from Faculty of Informatics and Statistics at University of Economics in Prague.</p>
+                        <p class="text-padding-top-bot text-padding-right">I'm a person who likes to learn new things every day especially in technology, psychology and business field. I believe in the importance of communication, team work and openness on projects to be successful. I love to challenge myself every single day.</p>
+                        <p class="text-padding-top-bot text-padding-right">For more information about my skills and career you can check my <a href="#" target="_blank">CV</a>, <a href="www.linkedin.com/in/adam-hemzal" target="_blank">LinkedIn</a>, <a href="https://github.com/adamhemzal" target="_blank">GitHub</a> or <a href="#">my portfolio</a>.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 padding-top-bot-5rem">
+                    <div class="slider">
+                        
+                        <div>
+                            <p>KOALA42</p>
+                            <p>Filip Molčík</p>
+                            <p>Co-founder</p>
+                        </div>
+
+                        <div>
+                            <p>Test</p>
+                            <p>Filip Krayem</p>
+                            <p>Hasič</p>
+                        </div>
+
+                        <div>
+                            <p>Semerák</p>
+                            <p>Hemi jede</p>
+                            <p>Koder</p>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="contact" class="section-contact-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 padding-top-bot-5rem">
+                        <h2>Get in touch</h2>
+                        <div class="border-right">
+                            <p class="text-padding-top-bot text-padding-right">Do you like my work? I enjoy discussing new ideas and challanges. I'm currently <strong>AVAILABLE</strong> for <strong>new projects</strong> or <strong>full-time job offers!</strong> If you are interested in my work you can contact me via email or reach me at LinkedIn. I'm looking forward to hearing from you!</p>
+                            <a class="contact-mail text-padding-top-bot" href="mailto:adam.hemzal@gmail.com"><i class="icon-mail-alt" aria-hidden="true"></i> adam.hemzal@gmail.com</a>
+                            <div class="text-padding-top-bot">
+                                <a class="icon-fontello" href="www.linkedin.com/in/adam-hemzal" target="_blank"><i class="icon-linkedin-squared" aria-hidden="true"></i></a>
+                                <a class="icon-fontello" href="https://github.com/adamhemzal" target="_blank"><i class="icon-github-squared" aria-hidden="true"></i></a>
+                                <a class="icon-fontello" href=""><i class="icon-twitter-squared" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
 
 
     </main>
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="container-fluid footer-background">
+        <div class="row">
+            <div class="col-md-12 text-align-center">
+                <p class="footer-description text-padding-top-bot">Crafted with ❤️ by Adam Hemzal | © 2020</p>
+            </div>
+        </div>
         
     </footer>
 
@@ -156,6 +291,10 @@
         class="lazyload" 
     />
 
+    <script src="js/slick.min.js" defer></script>
     <script src="js/app.min.js" defer></script>
+
+    <span style="display: none;">Background pattern from Toptal Subtle Patterns</span>
+
 </body>
 </html>

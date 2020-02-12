@@ -30,7 +30,7 @@
     text-decoration: inherit;
     width: 1em;
     margin-right: .2em;
-    text-align: center;
+    text-align: left;
     /* opacity: .8; */
    
     /* For safety - reset parent styles, that can break glyph codes*/
@@ -39,10 +39,7 @@
    
     /* fix buttons height, for twitter bootstrap */
     line-height: 1em;
-   
-    /* Animation center compensation - margins should be symmetric */
-    /* remove if not needed */
-    margin-left: .2em;
+
    
     /* you can be more comfortable with increased icons size */
     /* font-size: 120%; */
@@ -55,12 +52,13 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
   }
    
-  .icon-phone:before { content: '\e800'; } /* '' */
-  .icon-location:before { content: '\e801'; } /* '' */
-  .icon-calendar:before { content: '\e802'; } /* '' */
-  .icon-left-open:before { content: '\e803'; } /* '' */
-  .icon-down-open:before { content: '\e804'; } /* '' */
-  .icon-right-open:before { content: '\e805'; } /* '' */
-  .icon-up-open:before { content: '\e806'; } /* '' */
-  .icon-menu:before { content: '\f0c9'; } /* '' */
+  .icon-behance:before { content: '\e800'; } /* '' */
+  .icon-down-open:before { content: '\e803'; } /* '' */
   .icon-mail-alt:before { content: '\f0e0'; } /* '' */
+  .icon-dribbble:before { content: '\f17d'; } /* '' */
+  .icon-mail-squared:before { content: '\f199'; } /* '' */
+  .icon-facebook-official:before { content: '\f230'; } /* '' */
+  .icon-github-squared:before { content: '\f300'; } /* '' */
+  .icon-twitter-squared:before { content: '\f304'; } /* '' */
+  .icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+  .icon-linkedin-rect:before { content: '\f312'; } /* '' */
