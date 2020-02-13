@@ -7,8 +7,9 @@ $primary-black: #3B3A3A;
 $secondary-white: #fff;
 $secondary-grey: #A2A2A2;
 $border-grey: #CCCCCC;
-$primary-anchor: #E66640;
-$secondary-anchor: darken($primary-anchor, 10%);
+$primary-anchor: #F18701;
+$secondary-anchor-background: lighten($primary-anchor, 45%);
+$secondary-anchor: darken($primary-anchor, 5%);
 
 // BORDER RADIUS
 $border-top-left-radius: 25.5rem 1.5rem;

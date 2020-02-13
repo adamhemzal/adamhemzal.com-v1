@@ -30,7 +30,7 @@ img {
 }
 
 a:not(.brand):not(.btn):not(.icon-fontello):not(.contact-mail) {
-  color: tomato;
+  color: $primary-anchor;
   text-decoration: none;
   font-weight: 700;
   transition-duration: 0.2s;
@@ -40,7 +40,7 @@ a:not(.brand):not(.btn):not(.icon-fontello):not(.contact-mail) {
     color: $secondary-anchor;
     border-bottom: 0.15rem solid $secondary-anchor;
     text-decoration: none;
-    background-color: tomato;
+    background-color: $secondary-anchor-background;
   }
 }
 
@@ -107,6 +107,44 @@ nav {
       padding-right: 3rem;
     }
   }
+}
+
+.testimonial-image {
+  max-width: 8rem;
+  max-height: 8rem;
+  display: inline-block;
+  margin-right: 1.5rem;
+  @include for-tablet-landscape {
+    margin-right: 0;
+  }
+}
+
+.testimonial-container-header {
+  display: flex;
+  align-items: center;
+  @include for-tablet-landscape {
+    justify-content: center;
+    flex-wrap: wrap;
+    div {
+      margin-top: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.testimonial-position {
+  font-weight: 700;
+  color: $secondary-grey;
+}
+
+.testimonial-text {
+  margin-top: 1.5rem;
+  font-style: italic;
 }
 
 .header-photo {
