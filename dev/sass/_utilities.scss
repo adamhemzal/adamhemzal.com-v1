@@ -21,6 +21,9 @@
 
 .btn-margin-left {
     margin-left: 1rem;
+    @include for-phone-small {
+        margin-left: 0;
+    }
 }
 
 .background-white {

@@ -159,6 +159,10 @@ nav {
   font-size: 2.5rem;
 }
 
+.icon-home {
+  font-size: 2.5rem;
+}
+
 .icon-fontello, .icon-mail-alt {
   font-size: 3.5rem;
 }
@@ -173,6 +177,12 @@ nav {
   font-size: 1.35rem;
 }
 
+.brand {
+  @include for-phone-small {
+    display: none;
+  }
+}
+
 .brand, .icon-fontello, .contact-mail {
   color: $primary-black;
   &:hover {
@@ -183,6 +193,13 @@ nav {
 
 .brand-text {
   font-weight: 700;
+}
+
+.brand-home-icon {
+  display: none;
+  @include for-phone-small {
+    display: block;
+  }
 }
 
 .btn {
@@ -204,6 +221,9 @@ nav {
   transition-property: transform, box-shadow;
   &:hover {
     text-decoration: none;
+  }
+  @include for-phone-small {
+    width: 100%;
   }
 }
 
