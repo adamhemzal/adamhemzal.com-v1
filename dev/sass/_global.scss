@@ -210,6 +210,7 @@ nav {
   margin-bottom: .25rem;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
   display: inline-block;
   padding: .5rem 2rem;
   border: .15rem solid $primary-black;
@@ -225,6 +226,11 @@ nav {
   @include for-phone-small {
     width: 100%;
   }
+}
+
+.btn-projects {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn-primary {

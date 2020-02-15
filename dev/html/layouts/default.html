@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam Hemzal - SW & technology enthusiast who builds for the web</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="software, technology, enthusiast, web developer, developer, javascript, analysis, analyst,">
+    <meta name="description" content="Adam Hemzal is a software & technology enthusiast who loves building for the web." >
+    <meta name="author" content="Adam Hemžal" >
+    <meta name="theme-color" content="#96c21b" />
+
+    <!-- preconnect fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap" crossorigin>
+
+    <!-- socials -->
+    <meta property="og:title" content="{{fb-title}}">
+    <meta property="og:description" content="{{fb-decription}}">
+    <meta property="og:image" content="{{fb-image-url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{{fb-locale}}">
+    <meta property="og:site_name" content="{{fb-site-name}}">
+    <meta property="og:url" content="{{fb-url}}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{twitter-image-url}}">
+    <meta name="twitter:title" content="{{twitter-title}}" />
+    <meta name="twitter:site" content="{{twitter-username}}">
+
+    <!-- Include favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{root}}img/icon/favicon.ico" >
+
+    <!-- Include fonts-->
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap' />
+    <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800|Open+Sans:400,700&display=swap">
+    
+    <!-- Include CSS-->
+    <link rel="stylesheet" type="text/css" href="{{root}}css/style.min.css">
+
+    <script src="{{root}}js/jquery.min.js" defer></script>
+    <script src="{{root}}js/lazysizes.min.js" defer></script>
+
+    <!-- Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-00000-00', {
+          'legacyCookieDomain': 'XXX',
+          'siteSpeedSampleRate': 50,
+          'useAmpClientId': true
+        });
+        ga('require', 'trackomatic');
+        ga('send', 'pageview');
+      </script>
+      <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <!-- Include humans.txt-->
+    <link rel="author" type="text/plain" href="{{root}}humans.txt">
+
+</head> 
+<body>
+
+
+    {{> nav-header}}
+    {{> body}}
+    {{> footer}}
+
+
+    {{#ifpage 'index'}}
+    <script src="{{root}}js/slick.min.js" defer></script>
+    {{/ifpage}}
+    <script src="{{root}}js/app.min.js" defer></script>
+
+    <span style="display: none;">Background pattern from Toptal Subtle Patterns</span>
+
+</body>
+</html>

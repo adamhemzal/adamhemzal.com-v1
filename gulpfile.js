@@ -13,14 +13,15 @@
 • gulp-newer --> npm install gulp-newer --save-dev // loads only new files
 • gulp-cleanhtml --> npm install gulp-cleanhtml --save-dev
 • gulp-wait2 --> npm install gulp-wait2 --save-dev
+• panini --> npm install panini --save-dev
 • post-css --> npm install gulp-postcss --save-dev
     • postcss-preset-env --> npm install postcss-preset-env --save-dev
     • autoprefixer --> npm install autoprefixer --save-dev
     • cssnano -->  npm install cssnano --save-dev
     • stylelint --> npm install stylelint --save-dev
 
-npm install --save-dev gulp del browser-sync gulp-babel @babel/core @babel/preset-env gulp-sass node-sass gulp-rename gulp-size gulp-imagemin gulp-uglify gulp-newer gulp-cleanhtml gulp-wait2 gulp-postcss postcss-preset-env cssnano autoprefixer stylelint
-yarn add --dev gulp del browser-sync gulp-babel @babel/core @babel/preset-env gulp-sass node-sass gulp-rename gulp-size gulp-imagemin gulp-uglify gulp-newer gulp-cleanhtml gulp-wait2 gulp-postcss postcss-preset-env cssnano autoprefixer stylelint
+npm install --save-dev gulp del browser-sync gulp-babel @babel/core @babel/preset-env gulp-sass node-sass gulp-rename gulp-size gulp-imagemin gulp-uglify gulp-newer gulp-cleanhtml gulp-wait2 gulp-postcss postcss-preset-env cssnano autoprefixer panini stylelint
+yarn add --dev gulp del browser-sync gulp-babel @babel/core @babel/preset-env gulp-sass node-sass gulp-rename gulp-size gulp-imagemin gulp-uglify gulp-newer gulp-cleanhtml gulp-wait2 gulp-postcss postcss-preset-env cssnano autoprefixer panini stylelint
 
 ********************************************************************************************************/
 
@@ -41,6 +42,7 @@ const postcss = require('gulp-postcss');
 const postcssPresetEnv = require('postcss-preset-env');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const panini = require('panini');
 //const stylelint = require('stylelint');
 
 //******************************
@@ -63,7 +65,14 @@ const humans = {
 }
 
 const html = {
-    in: development + 'html/**/*',
+    in: development + 'html/pages/**/*.html',
+    root: development + 'html/pages/',
+    partials: development + 'html/partials/',
+    layouts: development + 'html/layouts/',
+    helpers: development + 'html/helpers/',
+    data: development + 'html/data/',
+    watch: development + 'html/{layouts,partials,helpers,data,pages}/**/*',
+    watchData: development + 'html/data/**',
     out: build
 };
 
@@ -211,12 +220,20 @@ function serve(cb) {
 }
 
 //******************************
-//	HTML
+//	HTML + PANINI
 //******************************
 
 function compileHtml(cb) {
+    panini.refresh();
     src(html.in)
-    .pipe(newer(html.out))
+    //.pipe(del(watchData))
+    .pipe(panini({
+        root: html.root,
+        layouts: html.layouts,
+        partials: html.partials,
+        helpers: html.helpers,
+        data: html.data
+    }))
     .pipe(htmlclean())
     .pipe(dest(html.out));
     cb();
@@ -243,7 +260,9 @@ function watcher(cb) {
     watch(images.in).on('change', series(minifyImages, browserSync.reload));
 
     //html
-    watch(html.in).on('change', series(compileHtml, browserSync.reload));
+    //watch(html.in).on('change', series(compileHtml, browserSync.reload));
+    watch(html.watch).on('change', series(compileHtml, browserSync.reload));
+    //watch(html.watchData).on('change', series(compileHtml, browserSync.reload));
 
     //sass
     watch(sass.watch).on('change', series(compileSass, browserSync.reload));

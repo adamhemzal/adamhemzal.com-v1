@@ -1,0 +1,29 @@
+
+<div class="container-fluid background-white margin-bot-6rem">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-lg-6 padding-top-bot-mobile">
+                <div class="flex-justify-between">
+                    <h3>{{name}}</h3>
+                    <p class="project-tag">{{project-tag}}</p>
+                </div>
+
+                <p class="text-padding-top-bot">{{text}}</p>
+                
+                <a href="{{link-more}}" class="btn btn-primary disabled" role="button">See more</a>
+                <a href="{{website}}" target="_blank" class="btn btn-secondary btn-margin-left" role="button">Website</a>
+            </div>
+
+            <div class="col-lg-6 padding-bot-mobile">
+                <img class="lazyload"
+                    data-srcset="{{img}},
+                    {{img-retina}} 2x"
+                    data-src="{{img}}" 
+                    alt="{{img-alt}}"
+                >
+            </div>
+
+        </div>
+    </div>
+</div>

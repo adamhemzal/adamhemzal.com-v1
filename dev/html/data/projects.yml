@@ -1,0 +1,57 @@
+homepage:
+  -
+    name: Barum Czech Rally Map
+    project-tag: 🗺️ Map
+    text: Online web map that shows speed tests, spectator places and other points of interest. I was in a role of a software engineer who was responsible for developing final product and delivering it to the customer. The website hit over 60,000 views in the first season.
+    link-more: index.html#
+    website: https://www.czechrally.com/wcd/maps/index.html
+    img-retina: img/projects/barum-czech-rally-map-2x.jpg
+    img: img/projects/barum-czech-rally-map.jpg
+    img-alt: Picture of Barum Czech Rally Online Map
+  -
+    name: Salon Khaleesi
+    project-tag: 💄 Beauty Salon
+    text: Salon Khaleesi is a cosmetic saloon providing various services like massage, manicure, pedicure, etc. I was responsible for the entire project - from communicating with client to building website. It runs on WordPress allowing client to publish news.
+    link-more: index.html#
+    website: https://www.salonkhaleesi.cz/
+    img-retina: img/projects/salon-khaleesi-2x.jpg
+    img: img/projects/salon-khaleesi.jpg
+    img-alt: Picture of Salon Khaleesi's website
+projectRowOne:
+  -
+    name: Barum Czech Rally Map
+    website: https://www.czechrally.com/wcd/maps/index.html
+    img-retina: img/projects/barum-czech-rally-map-2x.jpg
+    img: img/projects/barum-czech-rally-map.jpg
+    img-alt: Picture of Barum Czech Rally Online Map website
+  -
+    name: Salon Khaleesi
+    website: https://www.salonkhaleesi.cz/
+    img-retina: img/projects/salon-khaleesi-2x.jpg
+    img: img/projects/salon-khaleesi.jpg
+    img-alt: Picture of Salon Khaleesi's website
+  -
+    name: Diplomatic Academy
+    website: https://diplomaticka-akademie.cz/
+    img-retina: img/projects/diplomaticka-akademie-2x.jpg
+    img: img/projects/diplomaticka-akademie.jpg
+    img-alt: Picture of Diplomatic Academy's website
+projectRowTwo:
+  -
+    name: Obytňáky Holešov
+    website: https://obytnakyholesov.cz/
+    img-retina: img/projects/obytnaky-holesov-2x.jpg
+    img: img/projects/obytnaky-holesov.jpg
+    img-alt: Picture of Obytňáky Holešov's website
+  -
+    name: Ivan Pitoňák
+    website: https://www.ivanpitonak.cz/
+    img-retina: img/projects/ivanpitonak-2x.jpg
+    img: img/projects/ivanpitonak.jpg
+    img-alt: Picture of Ivan Pitonak's website
+  -
+    name: Nemléko - Complaint Form
+    website: https://b2b.nemleko.cz/reklamace/
+    img-retina: img/projects/nemleko-reklamacni-formular-2x.jpg
+    img: img/projects/nemleko-reklamacni-formular.jpg
+    img-alt: Picture of Nemléko complaint form website
