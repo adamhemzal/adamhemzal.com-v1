@@ -20,18 +20,21 @@ homepage:
 projectRowOne:
   -
     name: Barum Czech Rally Map
+    project-tag: 🗺️ Map
     website: https://www.czechrally.com/wcd/maps/index.html
     img-retina: img/projects/barum-czech-rally-map-2x.jpg
     img: img/projects/barum-czech-rally-map.jpg
     img-alt: Picture of Barum Czech Rally Online Map website
   -
     name: Salon Khaleesi
+    project-tag: 💄 Beauty Salon
     website: https://www.salonkhaleesi.cz/
     img-retina: img/projects/salon-khaleesi-2x.jpg
     img: img/projects/salon-khaleesi.jpg
     img-alt: Picture of Salon Khaleesi's website
   -
     name: Diplomatic Academy
+    project-tag: 📖 Courses
     website: https://diplomaticka-akademie.cz/
     img-retina: img/projects/diplomaticka-akademie-2x.jpg
     img: img/projects/diplomaticka-akademie.jpg
@@ -39,18 +42,21 @@ projectRowOne:
 projectRowTwo:
   -
     name: Obytňáky Holešov
+    project-tag: 🚐 Van Rental
     website: https://obytnakyholesov.cz/
     img-retina: img/projects/obytnaky-holesov-2x.jpg
     img: img/projects/obytnaky-holesov.jpg
     img-alt: Picture of Obytňáky Holešov's website
   -
     name: Ivan Pitoňák
+    project-tag: ⚽ Coach
     website: https://www.ivanpitonak.cz/
     img-retina: img/projects/ivanpitonak-2x.jpg
     img: img/projects/ivanpitonak.jpg
     img-alt: Picture of Ivan Pitonak's website
   -
     name: Nemléko - Complaint Form
+    project-tag: ⚛️ ReactJS
     website: https://b2b.nemleko.cz/reklamace/
     img-retina: img/projects/nemleko-reklamacni-formular-2x.jpg
     img: img/projects/nemleko-reklamacni-formular.jpg

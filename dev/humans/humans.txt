@@ -1,16 +1,13 @@
-/* TEAM */
-Your title: [Your name]
-Site: [email, link to a contact form, etc]
-Twitter: [your Twitter username]
-Location: [City, Country]
 
 /* THANKS */
-Name: [name or url]
+Name: Adam Hemžal (Adam Hemzal in English)
+Twitter: @adamhemzal
+Location: Prague
 
 /* SITE */
-Last update: [YYYY/MM/DD]
-Standards: [HTML5, CSS3,..]
-Components: [Modernizr, jQuery, etc.]
-Software: [Software used for the development]
+Last update: 2020/02/20
+Standards: HTML5, CSS3
+Components: Slick, jQuery
+Software: VSCode, Adobe Photoshop
 
 /* Background pattern from Toptal Subtle Patterns */

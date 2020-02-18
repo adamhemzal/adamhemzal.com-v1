@@ -1,29 +1,31 @@
-<main role="main" class="section-projects-background">
+<main role="main">
 
-    <section class="container">
-        <div class="row">
-
-            <div class="col-lg-12 padding-top-bot-5rem">
-                <h1>All projects</h1>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="container-fluid background-white">
-        <div class="container">
+    <div class="section-projects-background">
+        <section class="container">
             <div class="row">
-                {{#each projects.projectRowOne}}
-                    {{> project-row}}
-                {{/each}}
+    
+                <div class="col-lg-12 padding-top-bot-5rem">
+                    <h1>All projects</h1>
+                </div>
+    
             </div>
-            <div class="row">
-                {{#each projects.projectRowTwo}}
-                    {{> project-row}}
-                {{/each}}
+        </section>
+    
+        <section class="container-fluid background-white">
+            <div class="container">
+                <div class="row">
+                    {{#each projects.projectRowOne}}
+                        {{> project-row}}
+                    {{/each}}
+                </div>
+                <div class="row">
+                    {{#each projects.projectRowTwo}}
+                        {{> project-row}}
+                    {{/each}}
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     {{> get-in-touch}}
 
