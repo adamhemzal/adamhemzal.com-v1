@@ -1,13 +1,13 @@
 
-/* THANKS */
+/* TEAM */
 Name: Adam Hemžal (Adam Hemzal in English)
 Twitter: @adamhemzal
-Location: Prague
+Location: Prague, Zlín
 
 /* SITE */
 Last update: 2020/02/20
 Standards: HTML5, CSS3
-Components: Slick, jQuery
-Software: VSCode, Adobe Photoshop
+Components: Slick, jQuery, Bootstrap Grid
+Software: VSCode, Node.js, Gulp 4, Yarn, Adobe Photoshop, Adobe XD
 
 /* Background pattern from Toptal Subtle Patterns */

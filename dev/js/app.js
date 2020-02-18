@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    //disable console log
+    console.log = function() {}
+
     /*
     * Copyright (c) 2016 Milan Kyncl
     * Licensed under the MIT license.
