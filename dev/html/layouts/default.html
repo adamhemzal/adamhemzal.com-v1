@@ -45,13 +45,15 @@
     <script src="{{root}}js/jquery.min.js" defer></script>
     <script src="{{root}}js/lazysizes.min.js" defer></script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NJJ2LQ3');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158748330-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158748330-1');
+    </script>
 
     <!-- Include humans.txt-->
     <link rel="author" type="text/plain" href="{{root}}humans.txt">
@@ -65,8 +67,9 @@
     {{> footer}}
 
 
-    {{#ifpage 'index'}}
+    {{#ifpage 'molcik'}}
     <script src="{{root}}js/slick.min.js" defer></script>
+    <script src="{{root}}js/slick-run.min.js" defer></script>
     {{/ifpage}}
     <script src="{{root}}js/app.min.js" defer></script>
 

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+jQuery(function($){
 
     //disable console log
     console.log = function() {}
@@ -72,15 +72,16 @@ $(document).ready(function(){
   .mouseout(function() {
     $(this).attr("srcset", "img/me/adam-hemzal-drawing-optimized.png, img/me/adam-hemzal-drawing.png 2x");
   });
-    
-  //SLIDER
-  $('.slider').slick({
-      slidesToShow: 1,
-      dots: true,
-      arrows: false,
-      fade: true,
-      autoplay: true,
-      autoplaySpeed: 8000,
-    });
   
+
+  //SLIDER
+/*   $('.slider').not('.slick-initialized').slick({
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 8000,
+  }); */
+
 });
